@@ -2,7 +2,6 @@
   "name": "admin-panel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://m0jisto.github.io/Admin-Panel/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -20,15 +19,13 @@
     "react-scripts": "3.4.3",
     "router": "^1.3.5"
   },
-  "proxy": "https://backend-admin-panel.herokuapp.com",
+  "proxy": "http://localhost:3001",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "nodemon api/server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "server": "nodemon server/app.js"
   },
   "eslintConfig": {
     "extends": "react-app"
