@@ -20,7 +20,7 @@ const ShelterUpdatePage = () => {
 	});
 
 	useEffect(() => {
-		axios.get(`/shelters/${shelterId}`)
+		axios.get(`https://backend-admin-panel.herokuapp.com/shelters/${shelterId}`)
 			.then(({ data }) => setInputValue(data));
 	}, [shelterId]);
 
@@ -31,7 +31,7 @@ const ShelterUpdatePage = () => {
 		if (window.confirm('Вы действительно хотите изменить данный элемент?')) {
 			axios.put(`https://backend-admin-panel.herokuapp.com/shelters/${inputValue.id}`, inputValue)
 				.then(() => {
-					axios.get('/shelters')
+					axios.get('https://backend-admin-panel.herokuapp.com/shelters')
 						.then(({ data }) => dispatch(data));
 				});
 			history.push('/shelter');

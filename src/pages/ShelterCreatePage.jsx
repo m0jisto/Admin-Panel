@@ -25,7 +25,7 @@ const ShelterUpdatePage = () => {
 		if (window.confirm('Вы действительно хотите добавить данный элемент?')) {
 			axios.post('https://backend-admin-panel.herokuapp.com/shelters', inputValue)
 				.then(() => {
-					axios.get('/shelters')
+					axios.get('https://backend-admin-panel.herokuapp.com/shelters')
 						.then(({ data }) => dispatch(data));
 				});
 			history.push('/shelter');
