@@ -12,7 +12,7 @@ const ShelterTr = ({ id, title, adress, website, phoneNumber, email, specializat
 		if (window.confirm('Вы действительно хотите удалить данный элемент?')) {
 			axios.delete(`https://backend-admin-panel.herokuapp.com/shelters/${id}`)
 				.then(() => {
-					axios.get('/shelters')
+					axios.get('https://backend-admin-panel.herokuapp.com/shelters')
 						.then(({ data }) => dispatch(data));
 				});
 		}
