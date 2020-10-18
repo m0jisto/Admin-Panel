@@ -47,7 +47,7 @@ const ShelterUpdatePage = () => {
 				<FormBlock text="Email" type="email" name="email" value={inputValue.email} setValue={changeHandler} />
 				<FormBlock text="Веб-сайт" type="url" name="website" value={inputValue.website} setValue={changeHandler} />
 				<FormBlock text="Специализация" type="text" name="specialization" value={inputValue.specialization} setValue={changeHandler} />
-				<button type="submit" className="btn btn-primary mr-3">изменить</button>
+				<button type="submit" className="btn btn-primary mr-3">Изменить</button>
 				<Link to="/shelters" className="btn btn-outline-primary">Отмена</Link>
 			</form>
 		</div>
