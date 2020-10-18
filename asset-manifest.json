@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Admin-Panel/static/css/main.ed1ecb0d.chunk.css",
-    "main.js": "/Admin-Panel/static/js/main.0f6a5945.chunk.js",
-    "main.js.map": "/Admin-Panel/static/js/main.0f6a5945.chunk.js.map",
+    "main.js": "/Admin-Panel/static/js/main.68953e1a.chunk.js",
+    "main.js.map": "/Admin-Panel/static/js/main.68953e1a.chunk.js.map",
     "runtime-main.js": "/Admin-Panel/static/js/runtime-main.7566118b.js",
     "runtime-main.js.map": "/Admin-Panel/static/js/runtime-main.7566118b.js.map",
     "static/js/2.aa68b45c.chunk.js": "/Admin-Panel/static/js/2.aa68b45c.chunk.js",
     "static/js/2.aa68b45c.chunk.js.map": "/Admin-Panel/static/js/2.aa68b45c.chunk.js.map",
     "index.html": "/Admin-Panel/index.html",
-    "precache-manifest.6d8993fdcd179b30686e1934c611f0b7.js": "/Admin-Panel/precache-manifest.6d8993fdcd179b30686e1934c611f0b7.js",
+    "precache-manifest.6e4ae7b2ba8e7ad9a0a089f413680265.js": "/Admin-Panel/precache-manifest.6e4ae7b2ba8e7ad9a0a089f413680265.js",
     "service-worker.js": "/Admin-Panel/service-worker.js",
     "static/css/main.ed1ecb0d.chunk.css.map": "/Admin-Panel/static/css/main.ed1ecb0d.chunk.css.map",
     "static/js/2.aa68b45c.chunk.js.LICENSE.txt": "/Admin-Panel/static/js/2.aa68b45c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7566118b.js",
     "static/js/2.aa68b45c.chunk.js",
     "static/css/main.ed1ecb0d.chunk.css",
-    "static/js/main.0f6a5945.chunk.js"
+    "static/js/main.68953e1a.chunk.js"
   ]
 }
