@@ -23,12 +23,12 @@ const ShelterUpdatePage = () => {
 	const submitHadler = (e) => {
 		e.preventDefault();
 		if (window.confirm('Вы действительно хотите добавить данный элемент?')) {
-			axios.post('/shelters', inputValue)
+			axios.post('https://backend-admin-panel.herokuapp.com/shelters', inputValue)
 				.then(() => {
 					axios.get('/shelters')
 						.then(({ data }) => dispatch(data));
 				});
-			history.push('/shelters');
+			history.push('/shelter');
 		}
 	};
 
@@ -42,7 +42,7 @@ const ShelterUpdatePage = () => {
 				<FormBlock text="Веб-сайт" type="url" name="website" value={inputValue.website} setValue={changeHandler} />
 				<FormBlock text="Специализация" type="text" name="specialization" value={inputValue.specialization} setValue={changeHandler} />
 				<button type="submit" className="btn btn-primary mr-3">Добавить</button>
-				<Link to="/shelters" className="btn btn-outline-primary">Отмена</Link>
+				<Link to="/shelter" className="btn btn-outline-primary">Отмена</Link>
 			</form>
 		</div>
 	);

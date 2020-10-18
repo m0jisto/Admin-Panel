@@ -10,11 +10,11 @@ const SheltersPage = () => {
 	const { state, dispatch } = useContext(ContextApp);
 
 	useEffect(() => {
-		axios.get('/shelters')
+		axios.get('https://backend-admin-panel.herokuapp.com/shelters')
 			.then(({ data }) => dispatch(data));
 	}, [dispatch]);
 
-	if (typeof state !== 'object' || state.length === 0) return <></>;
+	if (typeof state !== 'object' || state.length === 0) return <Link to="/shelter/create" className="btn btn-primary mt-3">Создать новый приют</Link>;
 
 	return (
 		<>
@@ -38,7 +38,7 @@ const SheltersPage = () => {
 					}
 				</tbody>
 			</table>
-			<Link to="/shelters/create" className="btn btn-primary">Создать новый приют</Link>
+			<Link to="/shelter/create" className="btn btn-primary">Создать новый приют</Link>
 		</>
 	);
 };

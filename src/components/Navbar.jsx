@@ -6,7 +6,7 @@ const Navbar = () => (
 		<h1 className="display-4">Admin Panel</h1>
 
 		<div>
-			<Link to="/shelters" className="btn btn-outline-primary">Приюты</Link>
+			<Link to="/shelter" className="btn btn-outline-primary">Приюты</Link>
 		</div>
 	</div>
 );

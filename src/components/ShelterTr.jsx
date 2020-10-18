@@ -10,7 +10,7 @@ const ShelterTr = ({ id, title, adress, website, phoneNumber, email, specializat
 
 	const onDelete = () => {
 		if (window.confirm('Вы действительно хотите удалить данный элемент?')) {
-			axios.delete(`/shelters/${id}`)
+			axios.delete(`https://backend-admin-panel.herokuapp.com/shelters/${id}`)
 				.then(() => {
 					axios.get('/shelters')
 						.then(({ data }) => dispatch(data));
@@ -27,7 +27,7 @@ const ShelterTr = ({ id, title, adress, website, phoneNumber, email, specializat
 			<td>{email}</td>
 			<td>{website}</td>
 			<td>{specialization}</td>
-			<td><Link to={`/shelters/update/${id}`} className="btn btn-primary">&#10001;</Link></td>
+			<td><Link to={`/shelter/update/${id}`} className="btn btn-primary">&#10001;</Link></td>
 			<td><button type="button" className="btn btn-primary" onClick={onDelete}>&#128465;</button></td>
 		</tr>
 	);

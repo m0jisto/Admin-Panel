@@ -11,7 +11,7 @@ const App = () => {
 	const [state, dispatch] = useState([]);
 
 	useEffect(() => {
-		history.push('/shelters');
+		history.push('/shelter');
 	}, [history]);
 
 	return (
@@ -19,9 +19,9 @@ const App = () => {
 			<div className="container">
 				<Navbar />
 				<Switch>
-					<Route from="/shelters" component={SheltersPage} exact />
-					<Route from="/shelters/update/:id" component={ShelterUpdatePage} exact />
-					<Route from="/shelters/create" component={ShelterCreatePage} exact />
+					<Route from="/shelter" component={SheltersPage} exact />
+					<Route from="/shelter/update/:id" component={ShelterUpdatePage} exact />
+					<Route from="/shelter/create" component={ShelterCreatePage} exact />
 				</Switch>
 			</div>
 		</ContextApp.Provider>
